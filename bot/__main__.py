@@ -60,7 +60,7 @@ async def main():
     logging.info(f"Starting @{me.username}")
 
     # Запуск поллинга или вебхуков
-    if True:
+    if False:
         app = web.Application()
         configure_app(dp, app, config.app.webhook_path)
         runner = web.AppRunner(app, access_log=None)
