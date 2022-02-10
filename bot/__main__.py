@@ -91,6 +91,10 @@ async def main():
             await dp.reset_webhook()
             # await dp.skip_updates()  # пропуск накопившихся апдейтов (необязательно)
             await dp.start_polling(allowed_updates=get_handled_updates_list(dp))
+            # await dp.start_webhook(listen="0.0.0.0",port=int('8080'),url_path=config.bot.token)
+            # await bot.setWebhook('https://bot84613.herokuapp.com/' + config.bot.token)
+            await dp.idle()
+
         finally:
             await dp.storage.close()
             await dp.storage.wait_closed()
