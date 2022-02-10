@@ -31,7 +31,7 @@ def load_config() -> Config:
     return Config(
         bot=Bot(
             token=("5169139481:AAFe87OweWR_mAURxnOOC3f1kCRJGN3aheg"),
-            admin_chat_id=int('-792636176'),
+            admin_chat_id=int('-753045763'),
             remove_sent_confirmation=getenv("REMOVE_SENT_CONFIRMATION", "yes") in ("yes", "1", "true")
         ),
         app=App(
